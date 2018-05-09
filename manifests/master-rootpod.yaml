@@ -14,6 +14,12 @@ spec:
       name: root-volume
   hostNetwork: true
   hostPID: true
+  nodeSelector:
+    node-role.kubernetes.io/master: ""
+  tolerations:
+  - key: node-role.kubernetes.io/master
+    operator: Exists
+    effect: NoSchedule
   volumes:
   - name: root-volume
     hostPath:
