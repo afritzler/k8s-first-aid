@@ -9,7 +9,8 @@ kubectl exec -it rootpod /bin/sh
 ``` 
 The root file system can be found under `/hostroot/`. 
 
-Once in the busybox you can also do a `chroot`
+Once in the busybox you can do a `chroot`
 ```
 chroot /hostroot
 ```
+Now you should have access to the underlying OS.
