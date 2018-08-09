@@ -4,7 +4,7 @@ Helper Utils for Kubernetes
 ### rootpod
 Accessing the root file system of a host machine 
 ```
-kubectl create -f manifests/rootpod.yaml
+kubectl create -f https://raw.githubusercontent.com/afritzler/k8s-first-aid/master/manifests/rootpod.yaml
 kubectl exec -it rootpod /bin/sh
 ``` 
 The root file system can be found under `/hostroot/`. 
